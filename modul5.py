@@ -40,7 +40,13 @@ task = input("Vilken upgift vill du köra? 1-4: ")
 #1
 while task == "1":
     number0 = input("skriv ett numer: ")
-    break
+    if number0.isdigit() == True:
+        print("bra jobbat!!!")
+        break
+    elif number0.isdigit() == False:
+        print("Du måste skriva siffror!!!")
+        
+    
 
 
 #2
